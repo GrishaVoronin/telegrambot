@@ -51,7 +51,7 @@ def help(message):
                      reply_markup=keyboard)
     bot.send_message(message.chat.id, 'Посмотри следующее видео и сразу все поймешь.')
     bot.send_video(message.chat.id, open('videofortelegram.mp4', 'rb'))
-    time.sleep(5)
+    time.sleep(1)
     bot.send_message(message.chat.id, 'Вот еще пример:')
     bot.send_photo(message.chat.id, open('photofortelegram.jpg', 'rb'))
 @bot.message_handler(commands=['go'])
