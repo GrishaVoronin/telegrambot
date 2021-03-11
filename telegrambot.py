@@ -79,7 +79,7 @@ def takenewss(message):
                              'Извини, но я не могу переводить числа, имеющие больше, чем 1024 десятка. Попробуйте еще разок.')
             bot.send_sticker(message.chat.id, open('photofortelegram3.webp', 'rb'))
             break
-        if number in '/start/help/go' or oldss in '/start/help/go' or newss in '/start/help/go':
+        if number in '/START/HELP/GO' or oldss in '/START/HELP/GO' or newss in '/START/HELP/GO':
             keyboard = telebot.types.ReplyKeyboardMarkup(True)
             keyboard.row('/go', '/help')
             bot.send_message(message.chat.id, 'Вы не можете вызвать другую команду, пока не введете число, исходную и нужную систему счисления! Попробуйте еще разок.')
